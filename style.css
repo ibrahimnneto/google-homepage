@@ -1,0 +1,204 @@
+html {
+    height: 100%;
+    min-height: 100%;
+}
+/* NAVBAR */
+
+#navbar {
+    display: grid;
+    grid-template-columns: 1fr 50px 50px 50px 50px;
+    grid-template-rows: 50px;
+    grid-template-areas: ". gmail images appslogo sign-in";
+    
+}
+
+#gmail { 
+    grid-area: gmail;
+    justify-self: center;
+    align-self: center;
+}
+
+#images { 
+    grid-area: images;
+    justify-self: center;
+    align-self: center;
+}
+
+#appslogo {
+    grid-area: appslogo;
+    justify-self: center;
+    align-self: center;
+}
+
+#sign-in {
+    grid-area: sign-in;
+    justify-self: center;
+    align-self: center;
+}
+/* END OF NAVBAR */
+
+a {
+    text-decoration: none;
+    text-align: center;
+    color: rgba(0,0,0,0.87);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* MAIN */
+
+#main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px 70px 70px 250px;
+    grid-template-areas: 
+    ". logo ."
+    ". search ."
+    ". flexbox ."
+    ". googleoffered ."
+    ;
+}
+
+#logo  {
+    grid-area: logo;
+    justify-self: center;
+    align-self: flex-end;
+}
+#search {
+    display: flex;
+    grid-area: search;    
+    height: 44px;
+    align-self: center;
+    border-radius: 24px;
+    border: 1px solid #dfe1e5;
+    outline: none;
+    }
+#search:focus {
+    box-shadow: 1.0px 1.0px 5px rgb(179, 179, 179)
+    
+}
+
+#search:hover {
+    box-shadow: 1.0px 1.0px 5px rgb(179, 179, 179) ;
+    outline: none;
+    
+}
+
+#flexbox {
+    display: flexbox;
+    grid-area: flexbox;
+    justify-self: center;
+    align-self: center;
+   
+}
+#google-search-btn {
+    grid-area: google-search-btn;
+}
+#lucky-btn {
+    grid-area: lucky-btn;
+}
+#googleoffered {
+    grid-area: googleoffered;
+    justify-self: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+/* END OF MAIN */
+
+
+/* FOOTER */
+#footer {
+    display: grid;
+    grid-template-columns: 100px 100px 65px 110px 1fr 65px 65px 65px;
+    grid-template-rows: 50px;
+    grid-template-areas: 
+    "advertising business about how . privacy terms settings"
+    ;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width:100%;
+    background: #f2f2f2;
+}
+
+#footer a {
+    color: #70757a;
+}
+
+#advertising {
+    grid-area: advertising;
+    justify-self: center;
+    align-self: center;
+    font-size: 14px;
+
+}
+#business {
+    grid-area: business;
+    justify-self: center;
+    align-self: center;
+    font-size: 14px;
+}
+#about {
+    grid-area: about;
+    justify-self: center;
+    align-self: center;
+    font-size: 14px;
+}
+#how {
+    grid-area: how;
+    justify-self: center;
+    align-self: center;
+    font-size: 14px;
+}
+#privacy {
+    grid-area: privacy;
+    justify-self: center;
+    align-self: center;
+    font-size: 14px;
+}
+#terms {
+    grid-area: terms;
+    justify-self: center;
+    align-self: center;
+    font-size: 14px;
+}
+#settings {
+    grid-area: settings;
+    justify-self: center;
+    align-self: center;
+    font-size: 14px;
+}
+
+/* END OF FOOTER */
+
+/* BUTTONS */
+
+.buttons{
+    margin-top:30px;
+  }
+  .button{
+    background-color: #f8f9fa;
+    border:none;
+    color:#3c4043;
+    font-size:15px;
+    padding: 10px 20px;
+    margin:5px;
+    border-radius:4px;
+    outline:none;
+  }
+  .button:hover{
+    border: 1px solid #c8c8c8;
+    padding: 9px 19px;
+    color:#3c4043;
+  }
+  .button:focus{
+    border:1px solid #4885ed;
+    padding: 9px 19px;
+  }
+  /* END OF BUTTONS */
